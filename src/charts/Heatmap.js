@@ -38,6 +38,8 @@ const Heatmap = () => {
         });
 
         setTotalCount(total);
+        <h3>Total Data Points: {totalCount}</h3>
+
 
         const xAxis = [...new Set(Object.keys({ ...diabeticBins, ...nonDiabeticBins }).map(k => k.split('-')[1]))].sort((a, b) => a - b);
         const yAxis = [...new Set(Object.keys({ ...diabeticBins, ...nonDiabeticBins }).map(k => k.split('-')[0]))].sort((a, b) => a - b);
